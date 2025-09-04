@@ -61,7 +61,7 @@ function TreeViewItem(props: TreeViewItemProps) {
     }
 
     return <li>
-        <details open>
+        <details>
             <summary><WorldIcon /> {props.territory?.name}</summary>
         <ul>
             {childs.map(child => <TreeViewItem key={'t-'+child.id} territory={child} />)}
